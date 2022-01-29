@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* Убирает линии обводки ***************************************************/
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+header,
+footer,
+nav,
+aside {
+	display: block;
+}
+
+/* Уравнивает параметры шрифтов на разных браузерах */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Прошу элементы форм наследовать стили элементов шрифта */
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+/* Убирает крест у IE */
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+/*--------------------------- body */
+.header {
+	display: flex;
+	padding: 20px;
+	height: 95%;
+}
+.left {
+	flex: 1 1 25%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.left img {
+	display: flex;
+}
+.center {
+	flex: 1 1 50%;
+	padding: 10px;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li:not(:last-child) {
+	margin: 0px 30px 0px 0px;
+}
+.center__body h1 {
+	padding: 20px 0px 20px 0px;
+}
+.center_wrapper {
+	display: flex;
+}
+.center_wrapper p {
+	margin: 0px 0px 10px 0px;
+}
+.center__body_left {
+	flex: 1 1 30%;
+	color: rgba(0, 0, 0, 0.4);
+}
+.center__body_right {
+	flex: 1 1 70%;
+	color: #333;
+}
+.right {
+	flex: 1 1 25%;
+}
+.right > * {
+	margin-bottom: 10px;
+}
+.right h2 span {
+	color: #3bb33b;
+}
+.right h3 {
+	color: rgba(0, 0, 0, 0.4);
+}
+.footer {
+	display: flex;
+	height: 5%;
+	padding: 20px;
+	background-color: #000;
+	color: #fff;
+}
